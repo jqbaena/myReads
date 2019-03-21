@@ -13,7 +13,7 @@ const BookCard = props => {
     
     
     /**
-     * @description handle the change of book shelf
+     * @description search the book and update shelf
      * @constructor
      * @param {string} id - unique id of the book
      * @param {string} eventTargetValue - selected value of the book

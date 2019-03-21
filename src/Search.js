@@ -23,6 +23,11 @@ class Search extends React.Component {
         }
     }
 
+    /**
+     * @description updates the query state value depending on searchbar value
+     * @constructor
+     * @param  {string} query - searchbar value
+     */
     updateQuery = (query) => {
         this.setState(() => ({
             query: query.trim()
@@ -32,6 +37,11 @@ class Search extends React.Component {
         }
     }
 
+     /**
+     * @description makes the search depending on query state value
+     * @constructor
+     * @param  {string} query - searchbar value
+     */
     searchQuery = (query) => {
         BooksAPI.search(query, 20)
             .then(((books) => {
@@ -41,6 +51,12 @@ class Search extends React.Component {
             }), (this.setState(() => ({ books: [] }))))
     }
 
+     /**
+     * @description updates the shelf of the search books depending on user 
+     * @constructor
+     * @param  {string} searchBooks - array of books from the searchbar
+     * @param  {string} myBooks - array of books from user
+     */
     updateShelf = (searchBooks, myBooks) => {
         const containID = (book, id) => {
             return book.id === id
@@ -60,6 +76,11 @@ class Search extends React.Component {
         }
     }
 
+    /**
+     * @description makes the search depending on query state value
+     * @constructor
+     * @param  {string} query - searchbar value
+     */
     includeQuery = (book, query) => {
         return book.title.toLowerCase().includes(query.toLowerCase());
     }

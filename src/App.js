@@ -15,6 +15,9 @@ class BooksApp extends React.Component {
         books: [],
     };
 
+    /**
+     * @description makes sure you load books when component did mount
+     */
     componentDidMount() {
         BooksAPI.getAll()
             .then((books) => {
@@ -24,6 +27,12 @@ class BooksApp extends React.Component {
             })
     };
 
+    /**
+     * @description calls the API to get all the books updated
+     * @constructor
+     * @param {string} id - unique id of the book
+     * @param {string} eventTargetValue - selected value of the book
+     */
     handleChange = () => {
         BooksAPI.getAll()
             .then((books) => {
