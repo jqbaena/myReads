@@ -1,8 +1,13 @@
 # MyReads Project
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+This is the first project of Udacity's React Nanodegree. The aim of this app is to consolidate the fundamentals of ReactJS. The user has a collection of books avaialable in which new books can be added to
+different sections like 'read', 'want to read' or 'currently reading'. The search is limited to the API provided from Udacity. I have not writted the CSS of this project.
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+The following sources of information have been used in order to solve this project:
+	React official documentation: https://reactjs.org/docs/getting-started.html
+    Javascript documentation: https://developer.mozilla.org/es/docs/Web/JavaScript
+    The material from the course: https://eu.udacity.com/course/react-nanodegree--nd019
+
 
 ## TL;DR
 
@@ -23,13 +28,21 @@ To get started developing right away:
     ├── App.css # Styles for your app. Feel free to customize this as you desire.
     ├── App.js # This is the root of your app. Contains static HTML right now.
     ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
+    ├── BookCard.js # Stateless component used for a single book
+    ├── BookCardList.js # Stateless component used for making an array of books
+    ├── CurrentlyReading.js # Stateless component used for 'currently reading' section
     ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
     ├── icons # Helpful images for your app. Use at your discretion.
     │   ├── add.svg
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
     ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
+    ├── index.js # You should not need to modify this file. It is used for DOM rendering only.
+    ├── Read.js # Stateless component used for 'read' section
+    ├── Search.js # Component class used for the page /search
+    ├── SearchLinkButton.js # Stateless component used for the link to /search
+    └── WantToRead.js # Stateless component used for 'want to read' section
+
 ```
 
 Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
