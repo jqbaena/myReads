@@ -16,7 +16,7 @@ To get started developing right away:
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
-## What You're Getting
+## Project files
 ```bash
 ├── README.md - This file.
 ├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
@@ -45,7 +45,6 @@ To get started developing right away:
 
 ```
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
 
 ## Backend Server
 
