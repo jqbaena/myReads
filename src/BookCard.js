@@ -10,6 +10,7 @@ const BookCard = props => {
         ? bookAuthors.join(', ')
         : 'unknown';
     const shelf = typeof bookShelf === 'undefined' ? 'none' : bookShelf;
+
     
     
     /**

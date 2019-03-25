@@ -12,7 +12,9 @@ const BookCardList = (props) => {
      * @param {} book - book Object
      */
     const checkThumbnailUndefined = (book) => {
-        return (typeof book.imageLinks !== 'undefined') ? book.imageLinks.smallThumbnail : 'undefined';
+        return (typeof book.imageLinks !== 'undefined') 
+        ? book.imageLinks.smallThumbnail 
+        :'http://demo.vdiscovery.org/aum/images/no-image.png';
     }
 
     return (

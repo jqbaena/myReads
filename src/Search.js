@@ -90,7 +90,7 @@ class Search extends React.Component {
 
         const showingBooks = (query === '' || books.error === 'empty query' || books.length === 0)
             ? 'empty search'
-            : books.filter((b) => this.includeQuery(b, query))
+            : books
 
         const searchResult = (showingBooks !== 'empty search')
             ? <BookCardList books={showingBooks} handleChange={this.props.handleChange} />
