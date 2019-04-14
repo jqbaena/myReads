@@ -1,5 +1,7 @@
 # MyReads Project
 
+## Description 
+
 This is the first project of Udacity's React Nanodegree. The aim of this app is to consolidate the fundamentals of ReactJS. The user has a collection of books avaialable in which new books can be added to
 different sections like 'read', 'want to read' or 'currently reading'. The search is limited to the API provided by Udacity. I have not writted the CSS of this project.
 
