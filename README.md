@@ -1,4 +1,4 @@
-# MyReads Project
+# MyReads Udacity's Nanodegree Project
 
 ## Description 
 
